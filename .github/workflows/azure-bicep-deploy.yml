@@ -27,7 +27,7 @@ jobs:
     - run: |
         curl -Lo bicep https://github.com/Azure/bicep/releases/latest/download/bicep-linux-x64
         chmod +x ./bicep
-        ./bicep build /BicepFiles/main.bicep
+        ./bicep build BicepFiles/main.bicep
 
     - name: Az CLI inlineScript
       uses: Azure/CLI@v1
