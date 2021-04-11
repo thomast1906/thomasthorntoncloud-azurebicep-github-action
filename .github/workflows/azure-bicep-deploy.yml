@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       ResourceGroupName: tamops-bicep-rg
-      ResourceGroupLocation: "Australia East"
+      ResourceGroupLocation: "uksouth"
     environment: production
 
     steps:
