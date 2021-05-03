@@ -26,10 +26,8 @@ jobs:
 
     - name: Azure Bicep Build
       run: |
-        curl -Lo bicep https://github.com/Azure/bicep/releases/latest/download/bicep-linux-x64
-        chmod +x ./bicep
-        ./bicep build BicepFiles/main.bicep
-
+        az bicep build --file BicepFiles/main.bicep
+        
     - name: Az CLI Create Resource Group
       uses: Azure/CLI@v1
       with:
